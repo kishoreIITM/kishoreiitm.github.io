@@ -3,71 +3,278 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kishore - Software Engineer</title>
+    <title>Kishore Kumar - Full Stack Developer</title>
     <style>
-      body {
-        font-family: Arial, sans-serif;
+      :root {
+        --primary-color: #2c3e50;
+        --secondary-color: #3498db;
+        --text-color: #333;
+        --light-bg: #f8f9fa;
+      }
+
+      * {
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         line-height: 1.6;
+        color: var(--text-color);
+        background-color: var(--light-bg);
       }
-      header {
-        background-color: #333;
-        color: white;
-        text-align: center;
-        padding: 2rem;
-      }
-      main {
-        max-width: 800px;
+
+      .container {
+        max-width: 1200px;
         margin: 0 auto;
         padding: 2rem;
       }
-      footer {
-        background-color: #333;
+
+      header {
+        background-color: var(--primary-color);
         color: white;
+        padding: 3rem 0;
+        margin-bottom: 2rem;
+      }
+
+      .header-content {
         text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+      }
+
+      .profile-info {
+        text-align: center;
+      }
+
+      .profile-image {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid white;
+      }
+
+      .name {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .title {
+        font-size: 1.5rem;
+        color: #7f8c8d;
+      }
+
+      .contact-info {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 1rem;
+      }
+
+      .section {
+        background: white;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .section-title {
+        color: var(--secondary-color);
+        margin-bottom: 1.5rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid var(--secondary-color);
+      }
+
+      .experience-item {
+        margin-bottom: 2rem;
+      }
+
+      .experience-header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.5rem;
+      }
+
+      .company {
+        font-weight: bold;
+        color: var(--primary-color);
+      }
+
+      .date {
+        color: #666;
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+      }
+
+      .skill-category {
+        background: var(--light-bg);
         padding: 1rem;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
+        border-radius: 4px;
+      }
+
+      ul {
+        list-style-position: inside;
+        margin-left: 1rem;
+      }
+
+      li {
+        margin-bottom: 0.5rem;
       }
     </style>
   </head>
   <body>
     <header>
-      <h1>Kishore</h1>
-      <p>Software Engineer & Full Stack Developer</p>
+      <div class="container header-content">
+        <img src="image.jpg" alt="Kishore Kumar" class="profile-image" />
+        <div class="profile-info">
+          <h1 class="name">KISHORE KUMAR</h1>
+          <h2 class="title">SENIOR FULL STACK DEVELOPER</h2>
+          <div class="contact-info">
+            <span>📱 +91-6379761665</span>
+            <span>📧 kishoresukanth@gmail.com</span>
+            <span>📍 Bangalore, India</span>
+            <span
+              >🔗
+              <a
+                href="https://www.linkedin.com/in/kishore-kumar-iitm/"
+                style="color: white"
+                >LinkedIn</a
+              ></span
+            >
+          </div>
+        </div>
+      </div>
     </header>
 
-    <main>
-      <section>
-        <h2>About Me</h2>
-        <p>
-          I am Kishore, a passionate software engineer with expertise in full
-          stack development. As a software engineer, I specialize in designing,
-          developing, and maintaining complex software systems that solve
-          real-world problems.
-        </p>
+    <main class="container">
+      <section class="section">
+        <h2 class="section-title">WORK EXPERIENCE</h2>
+        <div class="experience-item">
+          <div class="experience-header">
+            <span class="company"
+              >Slice (FinTech) - Senior Full Stack Engineer</span
+            >
+            <span class="date">2024 - PRESENT</span>
+          </div>
+          <ul>
+            <li>
+              Implemented bulk message processing from Kafka with controlled
+              RPS, handling edge cases like server crashes and rebalancing loops
+            </li>
+            <li>
+              Configured Prometheus and Grafana for real-time server monitoring
+              in Kubernetes
+            </li>
+            <li>
+              Optimized PostgreSQL queries reducing execution times by 40%
+            </li>
+            <li>
+              Implemented organization-wide authentication system for CRM tools
+            </li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <div class="experience-header">
+            <span class="company">Slice - Full Stack Engineer</span>
+            <span class="date">2022 - 2024</span>
+          </div>
+          <ul>
+            <li>
+              Revolutionized collection agents' workflow by building multiple
+              internal CRM websites
+            </li>
+            <li>
+              Maintained Frontend stack using React and Redux Toolkit (RTK)
+            </li>
+            <li>Led Backend Engineering projects using Nestjs</li>
+            <li>
+              Worked on CI/CD pipelines with AWS, GitHub Actions, GCP, and Azure
+            </li>
+          </ul>
+        </div>
       </section>
 
-      <section>
-        <h2>My Role</h2>
-        <p>
-          As a full stack developer, I work with both front-end and back-end
-          technologies to create comprehensive web applications. This involves:
-        </p>
+      <section class="section">
+        <h2 class="section-title">EDUCATION</h2>
+        <div class="experience-item">
+          <div class="experience-header">
+            <span class="company">INDIAN INSTITUTE OF TECHNOLOGY MADRAS</span>
+            <span class="date">2017 - 2022</span>
+          </div>
+          <p>
+            Master of Technology (Dual Degree Program) - Aerospace Engineering
+          </p>
+          <p>GPA: 7.96 / 10</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">TECHNICAL SKILLS</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Backend</h3>
+            <ul>
+              <li>Node.js, Nest, Express</li>
+              <li>Python, TypeScript, C++</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>Frontend</h3>
+            <ul>
+              <li>React, RTK Queries</li>
+              <li>Saga, Redux</li>
+              <li>Tailwind CSS</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>Infrastructure & DB</h3>
+            <ul>
+              <li>Kafka, Prometheus</li>
+              <li>MongoDB, PostgreSQL</li>
+              <li>AWS, Docker, Azure</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">LANGUAGES</h2>
         <ul>
-          <li>Developing responsive user interfaces</li>
-          <li>Building robust server-side applications</li>
-          <li>Managing databases and API integrations</li>
-          <li>Ensuring application security and performance</li>
-          <li>Collaborating with cross-functional teams</li>
+          <li>English (Fluent)</li>
+          <li>Hindi (Fluent)</li>
+          <li>Tamil (Fluent)</li>
+          <li>Malayalam (Intermediate)</li>
+          <li>German (Basics)</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">EXTRACURRICULAR ACTIVITIES</h2>
+        <ul>
+          <li>
+            <strong>Dance</strong> - Choreographed dance routines for groups
+            with over 100 dancers
+          </li>
+          <li>
+            <strong>Music</strong> - Trained in Indian Classical music and
+            self-taught keyboard player
+          </li>
+          <li>
+            <strong>NSS</strong> - Collaborated with NGO to educate
+            underprivileged children
+          </li>
         </ul>
       </section>
     </main>
-
-    <footer>
-      <p>&copy; 2024 Kishore. All rights reserved.</p>
-    </footer>
   </body>
 </html>
