@@ -129,6 +129,67 @@
       li {
         margin-bottom: 0.5rem;
       }
+
+      @media screen and (max-width: 768px) {
+        .header-content {
+          flex-direction: column;
+          gap: 1rem;
+        }
+
+        .contact-info {
+          flex-direction: column;
+          gap: 0.5rem;
+        }
+
+        .experience-header {
+          flex-direction: column;
+          gap: 0.5rem;
+        }
+
+        .container {
+          padding: 1rem;
+        }
+
+        .section {
+          padding: 1rem;
+        }
+
+        .name {
+          font-size: 2rem;
+        }
+
+        .title {
+          font-size: 1.2rem;
+        }
+
+        .skills-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .profile-image {
+          width: 120px;
+          height: 120px;
+        }
+      }
+
+      /* Make text more readable on small screens */
+      @media screen and (max-width: 480px) {
+        body {
+          font-size: 14px;
+        }
+
+        .name {
+          font-size: 1.8rem;
+        }
+
+        .title {
+          font-size: 1.1rem;
+        }
+
+        .section-title {
+          font-size: 1.3rem;
+        }
+      }
     </style>
   </head>
   <body>
