@@ -229,17 +229,27 @@
           <ul>
             <li>
               Implemented bulk message processing from Kafka with controlled
-              RPS, handling edge cases like server crashes and rebalancing loops
+              requests per second (RPS), addressing edge cases such as server
+              crashes and rebalancing loops
             </li>
             <li>
               Configured Prometheus and Grafana for real-time server monitoring
-              in Kubernetes
+              in Kubernetes, integrated custom alerts using Victoria Metrics,
+              and published internal documentation to share insights on
+              time-series database functionality
             </li>
             <li>
-              Optimized PostgreSQL queries reducing execution times by 40%
+              Optimized indexes and query execution plans for PostgreSQL tables
+              with millions of records, reducing query times by up to 40%
             </li>
             <li>
-              Implemented organization-wide authentication system for CRM tools
+              Solely implemented the authentication system for the CRM tool,
+              which was later replicated across other CRM tools within the
+              organization
+            </li>
+            <li>
+              Continuously monitored the health of packages and Docker images
+              with AWS ECR and addressed vulnerabilities promptly
             </li>
           </ul>
         </div>
@@ -252,14 +262,69 @@
           <ul>
             <li>
               Revolutionized collection agents' workflow by building multiple
-              internal CRM websites
+              internal CRM websites, enhancing operational efficiency
             </li>
             <li>
-              Maintained Frontend stack using React and Redux Toolkit (RTK)
+              Independently maintained the Frontend stack of the internal
+              website, employing React and Redux Toolkit (RTK) for optimized and
+              seamless performance. Also developed several bottom-sheet for the
+              customer facing app
             </li>
-            <li>Led Backend Engineering projects using Nestjs</li>
             <li>
-              Worked on CI/CD pipelines with AWS, GitHub Actions, GCP, and Azure
+              Led key Backend Engineering projects, including automation of
+              notice generation, streamlining settlement processes, reducing
+              several manual labor hours using Nestjs
+            </li>
+            <li>
+              Worked on the CI/CD pipelines with AWS and GitHub actions along
+              with Route 53 setup for websites. Also worked with GCP and Azure
+              to set up the OAuth login
+            </li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <div class="experience-header">
+            <span class="company">Onicares - Machine Learning Intern</span>
+            <span class="date">2021</span>
+          </div>
+          <ul>
+            <li>
+              Pioneered implementation of content and collaborative based
+              recommendations system using AWS SageMaker
+            </li>
+            <li>
+              Included NLP libraries like Spacy and NLTK for vectorizing
+              documents to use cosine distance in Jupyter notebook
+            </li>
+            <li>
+              Deployed the ML system in the app's frontend (React, Saga) and
+              Backend system (API Gateway, AWS Lambda)
+            </li>
+            <li>
+              Built frontend of 2 webpages using ReactJS and Redux framework and
+              integrated them with the AWS environment
+            </li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <div class="experience-header">
+            <span class="company">VSSC - ISRO - Research Intern</span>
+            <span class="date">2019</span>
+          </div>
+          <ul>
+            <li>
+              Collaborated in a team of 3 to discover a code to predict the
+              exhaust plume shape for rockets using MATLAB
+            </li>
+            <li>
+              Devised methods to reduce wind tunnel test times and optimize the
+              engine's performance by studying the code
+            </li>
+            <li>
+              Optimized design for the Launch escape control system on the
+              Gaganyaan Mission (India's First Astronaut Program)
             </li>
           </ul>
         </div>
